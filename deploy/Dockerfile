@@ -1,5 +1,5 @@
-# alpine:latest at 2019-01-04T21:27:39IST
-FROM alpine@sha256:46e71df1e5191ab8b8034c5189e325258ec44ea739bba1e5645cff83c9048ff1
+# alpine:latest at 2021-05-20T20:14:22IST
+FROM alpine@sha256:69e70a79f2d41ab5d637de98c1e0b055206ba40a8145e7bddb55ccc04e13cf8f
 
 LABEL "com.github.actions.icon"="star"
 LABEL "com.github.actions.color"="ffd33d"
@@ -76,8 +76,8 @@ RUN apk update \
 		php7-zmq \
 		php7-memcached \
 		php7-xmlreader \
-		python \
-		py2-pip \
+		python3 \
+		py3-pip \
     && pip install shyaml \
 	&& cp /usr/share/zoneinfo/${TIMEZONE} /etc/localtime \
 	&& echo "${TIMEZONE}" > /etc/timezone \
