@@ -14,7 +14,7 @@ COPY LICENSE README.md THIRD_PARTY_NOTICE.md /
 RUN apt-get update && \
 	apt-get install --no-install-recommends -y \
 	python \
-	python-pip && \
+	python3-pip && \
 	pip install --upgrade setuptools && \
 	pip install shyaml && \
 	apt-get clean -y && \
